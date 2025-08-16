@@ -1,0 +1,20 @@
+{
+    "projects": [
+        {
+            "title": "Helpdesk ULBI",
+            "embed_url": "https://helpdesk.ulbi.ac.id/",
+            "description": "Service app for ULBI students and lecturers."
+        },
+        {
+            "title": "LearnOn.id",
+            "embed_url": "https://learnonid.github.io/",
+            "description": "Online learning management system."
+        },
+        {
+            "title": "Idbiz.id",
+            "embed_url": "https://id.biz.id",
+            "description": "Design service platform."
+        }
+        
+    ]
+}

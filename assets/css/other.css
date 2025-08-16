@@ -1,0 +1,70 @@
+.other {
+    background-color: black;
+    color: white;
+    padding-top: 5rem;
+}
+
+.other-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+.other h1 {
+    margin: 0;
+    padding-top: 2rem;
+    font-size: 4rem;
+    font-style: italic;
+}
+
+.other-subtitle {
+    margin: 0;
+    font-size: .8rem;
+    letter-spacing: .5rem;
+}
+
+.other-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    justify-items: start;
+}
+
+.music, .design {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
+    align-content: center;
+    gap: 1rem;
+}
+
+.mysongs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.idcards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+}
+
+.idcards img {
+    width: 40vh;
+    height: 60vh;
+    border-radius: 1rem;
+}
+
+.idcards img:last-child {
+    border: 1px solid #fff;
+}

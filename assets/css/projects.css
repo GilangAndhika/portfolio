@@ -1,0 +1,53 @@
+.projects {
+    margin: 0 1rem;
+    padding-top: 5rem;
+}
+
+.projects h1 {
+    margin: 0;
+    padding-top: 2rem;
+    font-size: 4rem;
+    font-style: italic;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.projects-card {
+    align-items: center;
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.projects-embed {
+    width: 60vh;
+    height: 40vh;
+    border: 1px solid #000;
+    border-radius: 25px;
+}
+
+.projects-description {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.bottom-line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bottom-line img {
+    width: 1rem;
+    height: 1rem;
+}

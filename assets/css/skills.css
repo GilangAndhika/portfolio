@@ -1,0 +1,33 @@
+.skills {
+    margin: 0 1rem;
+    padding-top: 5rem;
+}
+
+.skills-container {
+    background-image: url('../../assets/img/skillsbg.png');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.skills h1 {
+    margin: 0;
+    padding-top: 2rem;
+    font-size: 4rem;
+    font-style: italic;
+    text-align: end;
+}
+
+.skills-types {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skills-types img {
+    width: 20%;
+    height: auto;
+    align-items: center;
+    margin-top: 7rem;
+}

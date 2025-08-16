@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Gilang Andhika</title>
+
+    <link rel="icon" href="./assets/img/star.png" type="image/png">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/hero.css">
+    <link rel="stylesheet" href="./assets/css/projects.css">
+    <link rel="stylesheet" href="./assets/css/skills.css">
+    <link rel="stylesheet" href="./assets/css/other.css">
+    <link rel="stylesheet" href="./assets/css/preloader.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><p>Portfolio</p></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#hero" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#other">Other</a></li>
+                </ul>
+            </div>
+            <div class="contact"><img src="./assets/img/star.png" alt=""><a href="">Contact</a></div>
+        </div>
+    </nav> 
+
+    <div class="preloader">
+        <div class="loader"></div>
+        <div class="loader-text">LOADING...</div>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <img src="./assets/img/hero.png" alt="">
+        </div>
+        <div class="sosmed">
+            <a href="https://github.com/gilangandhika" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i></a>
+            <a href="https://instagram.com/itsg.lang" target="_blank" rel="noopener"><i class="ph ph-instagram-logo"></i></a>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="projects-container">
+            <h1>PROJECTS</h1>
+            <div class="card-container">
+                <!-- Project cards will be dynamically loaded here -->
+            </div>
+            <div class="bottom-line">
+                <div class="line"></div>
+                <div class="stars"><img src="./assets/img/star.png" alt=""></div>
+                <div class="stars"><img src="./assets/img/star.png" alt=""></div>
+                <div class="stars"><img src="./assets/img/star.png" alt=""></div>
+                <div class="stars"><img src="./assets/img/star.png" alt=""></div>
+                <div class="stars"><img src="./assets/img/star.png" alt=""></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills-container">
+            <h1>SKILLS</h1>
+            <div class="skills-types">
+                <img src="./assets/img/hardskill.png" alt="">
+                <img src="./assets/img/softskill.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="other" id="other">
+        <div class="other-container">
+            <h1>OTHER</h1>
+            <p class="other-subtitle">Hobby/Interest</p>
+            <div class="other-content">
+                <div class="music">
+                    <h1>Music.</h1>
+                    <p>Listening to music is a great way to relax, though I also enjoy creating my own tunes.</p>
+                    <div class="mysongs">
+                        <div class="spotify">
+                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/71smG3fvgRPrrcjl1nG6cO?utm_source=generator" width="300" height="380" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                        <div class="soundcloud"></div>
+                            <iframe width="300" height="380" scrolling="no" frameborder="0" style="border-radius: 12px;" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/123456789&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="design">
+                    <h1>Design.</h1>
+                    <p>Designing graphics and layouts is a passion of mine, and I love bringing ideas to life visually.</p>
+                    <div class="idcards">
+                        <img src="./assets/img/WhiteFluid-front.png" alt="">
+                        <img src="./assets/img/1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>Design and Program by Gilang Andhika</p>
+        </div>
+    </footer>
+
+    <!-- Include the projects JavaScript -->
+    <script src="./mod/js/projects.js"></script>
+    <!-- Include the navbar JavaScript -->
+    <script src="./mod/js/navbar.js"></script>
+    <!-- Include the preloader JavaScript -->
+    <script src="./mod/js/preloader.js"></script>
+</body>
+</html>
