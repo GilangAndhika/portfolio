@@ -43,6 +43,10 @@
     gap: 1rem;
 }
 
+.design {
+    row-gap: 2rem;
+}
+
 .mysongs {
     display: flex;
     justify-content: center;
@@ -65,6 +69,31 @@
     border-radius: 1rem;
 }
 
-.idcards img:last-child {
-    border: 1px solid #fff;
+.posters {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2rem; 
+}
+
+.posters img {
+    width: 40vh;
+    height: 60vh;
+    border-radius: 1rem;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2rem; 
+}
+
+.banner img {
+    width: 83vh;
+    height: 40vh;
+    border-radius: 1rem;
 }
