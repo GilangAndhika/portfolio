@@ -1,39 +1,72 @@
 .hero-container {
-    padding: 1rem 0;
+    padding: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-container img {
     width: 80%;
+    max-width: 500px;
     height: auto;
     display: block;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10rem;
+    margin: 0 auto 4rem auto;
 }
 
 .sosmed {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     gap: 1rem;
-    margin: 0 1rem;
+    margin: 0 1rem 2rem 1rem;
+    flex-wrap: wrap;
 }
 
 .sosmed a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    width: 2rem;
-    height: 2rem;
-    padding: .5rem;
-    border-radius: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
     background-color: #000;
     color: #fff;
     font-size: 2rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.sosmed a:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
 }
 
 .line {
-    width: 100%;
+    flex: 1;
     height: 1px;
     background-color: #000;
-    margin: 0 auto;
+    margin: 0 0.5rem;
+    min-width: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .hero-container img {
+        width: 95%;
+        max-width: 320px;
+        margin-bottom: 2rem;
+    }
+    .sosmed {
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .sosmed a {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+    .line {
+        min-width: 20px;
+    }
 }
