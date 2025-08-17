@@ -29,7 +29,7 @@ function initNavbarScroll() {
         // Trigger when the section is 10% visible
         threshold: 0.1,
         // Adjust root margin to trigger when section enters viewport
-        rootMargin: '0px 0px -50% 0px'
+        rootMargin: '0px 0px -60% 0px'
     });
 
     // Start observing the other section
