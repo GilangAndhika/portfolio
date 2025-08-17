@@ -67,7 +67,7 @@ class ContactForm {
 
     bindEvents() {
         // Contact button click event
-        const contactBtn = document.querySelector('.contact a');
+        const contactBtn = document.querySelector('.contact-btn');
         if (contactBtn) {
             contactBtn.addEventListener('click', (e) => {
                 e.preventDefault();
