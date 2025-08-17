@@ -2,7 +2,23 @@
 function initNavbarScroll() {
     const navbar = document.querySelector('.navbar');
     const otherSection = document.querySelector('.other');
-    
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.menu');
+
+    // Burger menu toggle
+    if (burger && menu) {
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+
+        // Optional: close menu when clicking a link
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('open');
+            });
+        });
+    }
+
     console.log('Navbar:', navbar);
     console.log('Other section:', otherSection);
     

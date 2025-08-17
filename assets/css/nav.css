@@ -2,14 +2,12 @@
     background: linear-gradient(to bottom, #fff 80%, transparent 100%);
     z-index: 1000;
     position: sticky;
-    position: -webkit-sticky;
     top: 0;
     left: 0;
     padding: 1rem;
     transition: background .5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Dark theme for navbar when in 'other' section */
 .navbar.navbar-dark {
     background: linear-gradient(to bottom, #000 80%, transparent 100%);
 }
@@ -43,11 +41,13 @@
     transition: color .5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     justify-content: center;
     gap: 2.5rem;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .menu a {
@@ -74,4 +74,83 @@
     font-size: 1.5rem;
     font-weight: bold;
     transition: color .5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 1em;
+    font-size: 2rem;
+    z-index: 1100;
+}
+
+.burger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #000;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: background .3s, transform .3s;
+}
+
+.navbar.navbar-dark .burger span {
+    background: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .burger {
+        display: flex;
+    }
+    .container {
+        flex-direction: row;
+        align-items: center;
+    }
+    .logo {
+        margin-right: auto;
+    }
+    .menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        transition: max-height .4s cubic-bezier(0.4,0,0.2,1);
+        overflow: hidden;
+        max-height: 0;
+        z-index: 1001;
+    }
+    .navbar.navbar-dark .menu {
+        background: #000;
+    }
+    .menu.open {
+        max-height: 400px;
+    }
+    .menu ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0.5rem;
+        position: sticky;
+    }
+    .container {
+        padding: 0 0.5em;
+    }
+    .logo p {
+        font-size: 1.2rem;
+    }
+    .contact a {
+        font-size: 1.1rem;
+    }
 }
