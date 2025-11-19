@@ -7,10 +7,10 @@
 
 .hero-container img {
     width: 100%;
-    max-width: 100vh;
+    max-width: 150vh;
     height: auto;
     display: block;
-    margin: 0 auto 4rem auto;
+    margin: 6rem auto;
 }
 
 .sosmed {
